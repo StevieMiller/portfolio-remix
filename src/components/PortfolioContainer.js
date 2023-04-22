@@ -6,7 +6,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
-function PortfolioContainer() {
+export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
   const renderPage = () => {
@@ -37,6 +37,4 @@ function PortfolioContainer() {
     <Footer />
     </>
   );
-}
-
-export default PortfolioContainer;
+};

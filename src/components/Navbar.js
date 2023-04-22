@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from './Header';
 
-function Navbar({ currentPage, handlePageChange }) {
+export default function Navbar({ currentPage, handlePageChange }) {
   return (
+    <>
     <div className='header'>
-    <Header />
+      <Header />
+    </div>
     <ul className="nav">
       <li className="nav-item">
         <a
@@ -43,8 +45,6 @@ function Navbar({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
-    </div>
+    </>
   );
-}
-
-export default Navbar;
+};
