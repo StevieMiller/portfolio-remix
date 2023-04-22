@@ -5,9 +5,56 @@ export default function Projects() {
     <section>
     <div className='page-container'>
       <h2>Projects</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem harum recusandae eveniet ratione officia in alias explicabo eum vero illo aut deleniti quaerat eligendi minima sunt at, aliquam asperiores nesciunt.
-      </p>
+      <div className='projects'>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+        <div className='card'>
+          <img src='...' className='card-img-top' alt='...' />
+          <div className='card-body'>
+            <h5 className='card-title'>Card title</h5>
+            <p className='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href='#' className='btn btn-primary'>Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
     </section>
   );

@@ -5,9 +5,21 @@ export default function Contact() {
     <section>
     <div className='page-container'>
       <h2>Contact</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error iure possimus, dolores deserunt omnis inventore voluptatem. Modi commodi labore est quas doloribus, ea quae corrupti, nostrum iste dicta quod.
-      </p>
+      <form>
+        <div className='mb-3'>
+          <label htmlFor='name' className='form-label'>Name</label>
+          <input type='text' className='form-control' id='name' placeholder='Name' />
+          <div className='mb-3'>
+            <label htmlFor='email' className='form-label'>Email</label>
+            <input type='email' className='form-control' id='email' placeholder='Email' />
+            <div className='mb-3'>
+              <label htmlFor='message' className='form-label'>Message</label>
+              <textarea className='form-control' id='message' rows='5' placeholder='Message'></textarea>
+              <button type='submit' className='btn btn-primary'>Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
     </section>
   );
