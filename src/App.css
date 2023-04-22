@@ -32,7 +32,11 @@ a:active {
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem;
+}
+
+.nav {
+  font-size: 1.25rem;
 }
 
 .page-container {
@@ -41,7 +45,7 @@ a:active {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-bottom: 5rem;
+  margin: 2rem 0 5rem 0;
 }
 
 .footer {
@@ -50,7 +54,7 @@ a:active {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 
 .headshot {
@@ -60,5 +64,30 @@ a:active {
 }
 
 .greeting {
-  margin: 40px 0 40px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #282c34;
+  margin: 2rem 0 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-container {
+    padding: 1rem;
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    margin: 1rem 1rem 5rem 1rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .nav {
+    flex-direction: column;
+  }
 }

@@ -7,7 +7,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
     <div className='header'>
       <Header />
     </div>
-    <ul className="nav">
+    <ul className="nav navbar">
       <li className="nav-item">
         <a
           href="#about"
