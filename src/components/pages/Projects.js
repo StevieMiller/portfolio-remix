@@ -70,8 +70,8 @@ export default function Projects() {
                 <h3 className="card-title">{title}</h3>
                 <p className="card-text">{description}</p>
                 <div className="d-grid gap-2">
-                  <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Demo</a>
-                  <a href={github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
+                  <a href={link} target="_blank" rel="noopener noreferrer" className="btn">Demo</a>
+                  <a href={github} target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
                 </div>
               </div>
             </div>
