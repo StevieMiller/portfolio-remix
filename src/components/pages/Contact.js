@@ -1,26 +1,85 @@
-import React from 'react';
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
 
-export default function Contact() {
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [validated, setValidated] = useState(false);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
+  };
+
   return (
-    <section>
-    <div className='page-container'>
-      <h2>Contact</h2>
-      <form>
-        <div className='mb-3'>
-          <label htmlFor='name' className='form-label'>Name</label>
-          <input type='text' className='form-control' id='name' placeholder='Name' />
-          <div className='mb-3'>
-            <label htmlFor='email' className='form-label'>Email</label>
-            <input type='email' className='form-control' id='email' placeholder='Email' />
-            <div className='mb-3'>
-              <label htmlFor='message' className='form-label'>Message</label>
-              <textarea className='form-control' id='message' rows='5' placeholder='Message'></textarea>
-              <button type='submit' className='btn btn-primary'>Send</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+    <section className='page-container'>
+            <h2 className='mb-5'>Contact</h2>
+
+    <Form noValidate validated={validated} onSubmit={handleSubmit} className='form-width'>
+      <Form.Group controlId="name">
+        <Form.Label>Name</Form.Label>
+        <Form.Control
+          required
+          type="text"
+          placeholder="Enter your name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+        />
+        <Form.Control.Feedback type="invalid">
+          Please enter your name.
+        </Form.Control.Feedback>
+      </Form.Group>
+
+      <Form.Group controlId="email">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control
+          required
+          type="email"
+          placeholder="Enter your email"
+          name="email"
+          value={formData.email}
+          onChange={handleInputChange}
+        />
+        <Form.Control.Feedback type="invalid">
+          Please enter a valid email address.
+        </Form.Control.Feedback>
+      </Form.Group>
+
+      <Form.Group controlId="message">
+        <Form.Label>Message</Form.Label>
+        <Form.Control
+          required
+          as="textarea"
+          rows={3}
+          placeholder="Enter your message"
+          name="message"
+          value={formData.message}
+          onChange={handleInputChange}
+        />
+        <Form.Control.Feedback type="invalid">
+          Please enter your message.
+        </Form.Control.Feedback>
+      </Form.Group>
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
     </section>
   );
-}
+};
+
+export default ContactForm;

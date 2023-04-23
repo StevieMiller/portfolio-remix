@@ -10,6 +10,12 @@ h2 {
   color: #282c34;
 }
 
+h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #282c34;
+}
+
 a:link {
   color: #61dafb;
 }
@@ -70,8 +76,18 @@ a:active {
   margin: 2rem 0 2rem 0;
 }
 
-.form-control {
+.form-width {
   width: 100%;
+  max-width: 500px;
+}
+
+.card-title {
+  height: 75px;
+  text-align: center;
+}
+
+.card-text {
+  height: 125px;
 }
 
 @media screen and (max-width: 1024px) {
