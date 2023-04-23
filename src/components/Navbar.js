@@ -7,8 +7,8 @@ export default function Navbar({ currentPage, handlePageChange }) {
     <div className='header'>
       <Header />
     </div>
-    <ul className="nav navbar">
-      <li className="nav-item">
+    <ul>
+      <li>
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -17,7 +17,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           About
         </a>
       </li>
-      <li className="nav-item">
+      <li>
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -26,7 +26,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           Projects
         </a>
       </li>
-      <li className="nav-item">
+      <li>
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -35,7 +35,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item">
+      <li>
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
