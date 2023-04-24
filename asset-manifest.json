@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio-remix/static/css/main.719ea2d5.css",
+    "main.js": "/portfolio-remix/static/js/main.0f4b5fc7.js",
+    "static/js/787.c4702d74.chunk.js": "/portfolio-remix/static/js/787.c4702d74.chunk.js",
+    "static/media/headshot.png": "/portfolio-remix/static/media/headshot.bf673b34ff8e56bd8110.png",
+    "static/media/dayplanner.png": "/portfolio-remix/static/media/dayplanner.ed14bbae13aad3dacc5c.png",
+    "static/media/notetaker.png": "/portfolio-remix/static/media/notetaker.cd4caec57216fd52fd55.png",
+    "static/media/weather-medium.png": "/portfolio-remix/static/media/weather-medium.b22e1c5adf609217e4ce.png",
+    "static/media/password-generator.png": "/portfolio-remix/static/media/password-generator.6c86f0a49c96682347f2.png",
+    "static/media/animanga-portfolio.png": "/portfolio-remix/static/media/animanga-portfolio.cfaea284fe05c742df25.png",
+    "index.html": "/portfolio-remix/index.html",
+    "main.719ea2d5.css.map": "/portfolio-remix/static/css/main.719ea2d5.css.map",
+    "main.0f4b5fc7.js.map": "/portfolio-remix/static/js/main.0f4b5fc7.js.map",
+    "787.c4702d74.chunk.js.map": "/portfolio-remix/static/js/787.c4702d74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.719ea2d5.css",
+    "static/js/main.0f4b5fc7.js"
+  ]
+}
