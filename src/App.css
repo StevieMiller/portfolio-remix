@@ -1,9 +1,9 @@
 :root {
   --pink: #dd0386;
   --cyan: #09f2ea;
-  --dark: #3a0ca3;
+  --dark: #000029;
   --cardbody: #4361ee;
-  --cartext: #000;
+  --cartext: #fff;
 }
 
 h1, h2, h3, a {
