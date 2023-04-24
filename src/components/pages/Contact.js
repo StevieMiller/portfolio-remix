@@ -29,7 +29,7 @@ const ContactForm = () => {
 
     <Form noValidate validated={validated} onSubmit={handleSubmit} className='form-width'>
       <Form.Group controlId="name">
-        <Form.Label>Name</Form.Label>
+        <p className='form'>Name</p>
         <Form.Control
           required
           type="text"
@@ -44,7 +44,7 @@ const ContactForm = () => {
       </Form.Group>
 
       <Form.Group controlId="email">
-        <Form.Label>Email address</Form.Label>
+        <p className="form">Email address</p>
         <Form.Control
           required
           type="email"
@@ -59,7 +59,7 @@ const ContactForm = () => {
       </Form.Group>
 
       <Form.Group controlId="message">
-        <Form.Label>Message</Form.Label>
+        <p className='form'>Message</p>
         <Form.Control
           required
           as="textarea"
@@ -74,7 +74,7 @@ const ContactForm = () => {
         </Form.Control.Feedback>
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button className='proj-btn' type="submit">
         Submit
       </Button>
     </Form>

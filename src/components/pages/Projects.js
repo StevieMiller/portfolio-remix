@@ -1,10 +1,10 @@
 import React from 'react';
 import Proj001 from '../../images/quiz-master-max.png';
 import Proj002 from '../../images/animanga-portfolio.png';
-import Proj003 from '../../images/project.png';
-import Proj004 from '../../images/project.png';
-import Proj005 from '../../images/project.png';
-import Proj006 from '../../images/project.png';
+import Proj003 from '../../images/dayplanner.png';
+import Proj004 from '../../images/notetaker.png';
+import Proj005 from '../../images/weather-medium.png';
+import Proj006 from '../../images/password-generator.png';
 
 export default function Projects() {
   const projects = [
@@ -59,8 +59,8 @@ export default function Projects() {
   ];
 
   return (
-    <section className='page-container'>
-      <h2 className='mb-5'>Projects</h2>
+    <section className='container'>
+      <h2 className='mb-5 text-center'>Projects</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {projects.map(({ id, title, image, description, link, github }) => (
           <div className="col" key={id}>
@@ -69,9 +69,9 @@ export default function Projects() {
               <div className="card-body">
                 <h3 className="card-title">{title}</h3>
                 <p className="card-text">{description}</p>
-                <div className="d-grid gap-2">
-                  <a href={link} target="_blank" rel="noopener noreferrer" className="btn">Demo</a>
-                  <a href={github} target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+                <div className="d-grid gap-2 buttons">
+                  <a href={link} target="_blank" rel="noreferrer" className='proj-btn'>Demo</a>
+                  <a href={github} target="_blank" rel="noreferrer" className='proj-btn'>GitHub</a>
                 </div>
               </div>
             </div>

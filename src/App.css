@@ -1,7 +1,9 @@
 :root {
   --pink: #dd0386;
   --cyan: #09f2ea;
-  --dark: #000716;
+  --dark: #3a0ca3;
+  --cardbody: #4361ee;
+  --cartext: #000;
 }
 
 h1, h2, h3, a {
@@ -9,15 +11,20 @@ h1, h2, h3, a {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
-h1 {
+h1, h2 {
   color: var(--pink);
+}
+
+h3 {
+  color: var(--cyan)
 }
 
 a:link {
   color: var(--cyan);
+  text-decoration: none;
 }
 
 a:visited {
@@ -25,7 +32,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--cyan);
+  color: var(--pink);
 }
 
 a:active {
@@ -44,12 +51,42 @@ li {
   margin-right: 25px;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proj-btn {
+  background-color: var(--dark);
+  border-radius: 5px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+}
+
+.resume-btn {
+  background-color: var(--cardbody);
+  border-radius: 5px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+  color: var(--cyan)
+}
+
 .header {
   background-color: var(--dark);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
   padding: 1rem;
 }
 
@@ -57,7 +94,7 @@ li {
   font-size: 1.25rem;
 }
 
-.page-container {
+.page-container, .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,8 +107,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   padding: 1rem;
+  background-color: var(--dark);
 }
 
 .headshot {
@@ -91,6 +128,10 @@ li {
   max-width: 500px;
 }
 
+.form {
+  margin-top: 2rem;
+}
+
 .card-title {
   height: 75px;
   text-align: center;
@@ -98,6 +139,11 @@ li {
 
 .card-text {
   height: 125px;
+  color: var(--cartext);
+}
+
+.card-body {
+  background-color: var(--cardbody);
 }
 
 @media screen and (max-width: 1024px) {
