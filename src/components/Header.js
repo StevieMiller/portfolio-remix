@@ -1,11 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export default function Header() {
   return (
-    <header>
-        <h1>
-          Stevie Miller
-        </h1>
-    </header>
+    <>
+      <h1>
+        Stevie Miller
+      </h1>
+        <Navbar />
+    </>
   )
 };
